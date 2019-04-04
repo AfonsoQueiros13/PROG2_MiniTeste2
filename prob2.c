@@ -14,29 +14,13 @@ vetor* contar_remetente_destinatario(vetor *vrem, vetor *vdest)
 {
 
 	 vetor *nomes = vetor_novo();
-	 //int num_cartas[43]= {1};
 	 v_elemento *elemento;
-	 v_elemento *elemento_nomes;
+	 //char *vec[50];
 		for(int i=0;i<vrem->tamanho;i++){
 		    elemento->str = vetor_elemento(vrem,i);
-			//printf("\n%s",elemento->str);
-			vetor_insere(nomes,elemento->str,-1);
-			}
-		for(int i=0;i<vdest->tamanho;i++){
-		    elemento->str = vetor_elemento(vdest,i);
-			//printf("\n%s",elemento->str);
-			vetor_insere(nomes,elemento->str,-1);
-			}
-
-		for(int i=0;i<nomes->tamanho;i++){
-			elemento_nomes->str= vetor_elemento(nomes,i);
-			for(int j=0;j<nomes->tamanho;j++){
-				 elemento->str = vetor_elemento(vrem,j);
-				 if(strcmp(elemento->str,elemento_nomes->str)==0){
-					 vetor_remove(nomes,j);
-					 j--;
-				 }
-				//printf("\n%s",elemento_nomes->str);
+			printf("\n%s",elemento->str);
+			//strcpy(vec[i],elemento->str);
+			//printf("\n%s",vec[i]);
 			}
 		
 
